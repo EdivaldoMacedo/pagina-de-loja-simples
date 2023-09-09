@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja do Edi</title>
+</head>
+<body>
+    <header>
+        <h1>Loja do Edi</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#cart">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="products">
+        <section class="product">
+            <h2>Camisa</h2>
+            <img src="camisa.jpg" alt="Camisa" style="width: 50%;">
+            <p>Esta é uma camisa de alta qualidade, 
+                feita de algodão 100% e disponível em vários tamanhos.</p>
+            <p>Preço: $20</p>
+            <button onclick="addToCart('Produto 1', 10)">Adicionar ao Carrinho</button>
+        </section>
+        <section class="product">
+            <h2>Calça</h2>
+            <img src="calca.jpg" alt="Calça" style="width: 50%;">
+            <p>Estas são calças confortáveis e duráveis, 
+                perfeitas para qualquer ocasião.</p>
+            <p>Preço: $45</p>
+            <button onclick="addToCart('Produto 2', 15)">Adicionar ao Carrinho</button>
+        </section>
+    </main>
+    <aside id="cart" style="width: 25%;">
+        <h2>Carrinho de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0</span></p>
+        <button onclick="checkout()">Finalizar Compra</button>
+    </aside>
+    <footer>
+        © 2023 Loja do Edi. Todos os direitos reservados.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
